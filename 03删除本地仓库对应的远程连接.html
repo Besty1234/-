@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- 
+
+        1. 有的时候我们远程链接仓库地址换了，或者没了，我要让本地仓库
+        去链接一个新仓库
+         
+
+         origin 代表链接名
+        git remote add origin https://gitee.com/xpzll/viewdemo95.git
+           
+        git remote remove 连接名
+
+
+        比如  git remote remove origin
+
+
+
+        所以如果你一个本地仓库，要推送多个远程仓库，要建立新的连接，而新的连接名字不能重复
+
+
+         也就是说连接到这个新仓库的别名叫xx
+           git remote add xx 新仓库地址
+
+         意思是把本地仓库推送到xx这个连接的远程仓库
+          git push -u xx "master"
+
+
+- 总结
+- 本地仓库可以连接多个远程仓库
+- 但是连接名，不能一样
+- 多仓库时推送时 `git push 名字`，的名字要改，你写 `origin`就只是给`origin`这个连接推送，你要推送到别的仓库，级写别的仓库的连接名，比如叫`xx`
+
+
+
+     -->
 </body>
+
 </html>
